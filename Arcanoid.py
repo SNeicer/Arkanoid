@@ -112,7 +112,7 @@ class Ball(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__(all_sprites)
         self.add(BallG) # Добавляем мяч в специальную группу для взаимодействий
-        self.image = pygame.transform.scale(Ball.image, (30, 30))
+        self.image = Ball.image # pygame.transform.scale(Ball.image, (30, 30))
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
